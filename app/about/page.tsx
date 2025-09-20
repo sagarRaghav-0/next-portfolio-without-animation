@@ -10,7 +10,7 @@ const page = () => {
                 <Navbar />
                 <div className="grid grid-cols-6 ">
 
-                    <p className="text-[#aeaeae] text-2xl md:text-5xl h-screen pt-[10vh] tracking-wide leading-tight col-span-6 md:col-span-5">
+                    <p className="text-[#aeaeae] text-2xl md:text-5xl h-screen pt-[20vh] md:pt-[10vh] tracking-wide leading-tight col-span-6 md:col-span-5">
                         I’m Sagar, a <span>UI/UX designer</span> with a background in web and <span> front-end development </span>.
                         My work merges design, usability, and strategy to create digital experiences that connect with people.
                         Passionate about web design, branding, Progressive web app, I focus on transforming ideas into impactful,
