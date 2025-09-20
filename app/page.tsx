@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-[#efefef] fixed inset-0  w-screen h-screen z-0"> </div>
-      <div className="relative px-5 md:px-10 text-[#171717] font-Outfit z-10" >
+      <div className="relative px-5 md:px-10 pt-[20vh] text-[#171717] font-Outfit z-10" >
         <Navbar />
 
         <FirstPage />
