@@ -11,9 +11,9 @@ const Page = () => {
             <div className="relative px-5 md:px-10 bg-[#efefef] font-Outfit ">
                 <Navbar />
 
-                <div className=" relative flex flex-col justify-center md:mt-0 mt-12  mb-[20vh] items-center md:mb-[30vh]">
+                <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center mb-[25vh]">
                     {/* Project 1 */}
-                    <div className=" relative w-screen h-[20vh] md:h-screen my-20 md:mt-10">
+                    <div className=" relative w-screen h-[20vh] md:h-screen mb-20">
                         <Link href="#">
                             <Image
                                 src="/ecom.png"

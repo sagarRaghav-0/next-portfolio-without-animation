@@ -8,7 +8,7 @@ const page = () => {
         <>
             <div className="px-5 md:px-10 bg-[#efefef] font-Outfit">
                 <Navbar />
-                <div className="grid grid-cols-6 ">
+                <div className="grid grid-cols-6 pt-[10vh]">
 
                     <p className="text-[#aeaeae] text-2xl md:text-5xl h-screen pt-[20vh] md:pt-[10vh] tracking-wide leading-tight col-span-6 md:col-span-5">
                         I’m Sagar, a <span>UI/UX designer</span> with a background in web and <span> front-end development </span>.

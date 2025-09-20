@@ -8,7 +8,7 @@ const page = () => {
     return (
         <div className='px-5 md:px-10  bg-[#efefef] font-Outfit'>
             <Navbar />
-            <div className='flex flex-col mt-[-10vh] h-screen justify-center '>
+            <div className='flex flex-col pt-[10vh] h-screen justify-center '>
                 <div className='flex flex-col gap-5 mb-20'>
                     <p className='text-3xl md:text-5xl text-[#aeaeae] '>Behind every <span> great design </span> there’s a<br />
                         conversation waiting to <span> happen</span>

@@ -9,7 +9,7 @@ const page = () => {
             <Navbar />
 
 
-            <div className="flex items-start justify-center mt-[-10vh] md:mt-[-15vh] h-screen flex-col">
+            <div className="flex items-start justify-center  md:mt-0 h-screen flex-col">
                 <p className="text-3xl md:text-5xl text-[#aeaeae] mb-5">Services That <span> Shape </span> Experiences</p>
                 <p>Design, development, and strategy—crafted to bring <br />
                     ideas to life and make every interaction meaningful.</p>
