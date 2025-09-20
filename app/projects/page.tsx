@@ -11,7 +11,7 @@ const Page = () => {
             <div className="relative px-5 md:px-10 bg-[#efefef] font-Outfit ">
                 <Navbar />
 
-                <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center mb-[25vh]">
+                <div className=" relative flex flex-col justify-center md:pt-[13vh] pt-[25vh]  items-center mb-[25vh]">
                     {/* Project 1 */}
                     <div className=" relative w-screen h-[20vh] md:h-screen mb-20">
                         <Link href="#">
