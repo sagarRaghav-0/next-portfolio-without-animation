@@ -32,7 +32,7 @@ const Projects = () => {
                 <GsapAnimate from="right">
                     <Link
                         href="/projects/other"
-                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-10vh] sm:mt-[-10vh] md:mt-0"
+                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
                     >
                         <Image
                             src="/fit.png"
