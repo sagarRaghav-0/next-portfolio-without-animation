@@ -4,7 +4,7 @@ const Capabilities = () => {
     return (
         <div className="md:mb-50">
             <Copy>
-                <p className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 text-[#aeaeae]">Capabilities</p>
+                <p className="text-3xl font-semibold mb-8 text-[#aeaeae]">Capabilities</p>
             </Copy>
             <div className="flex flex-col text-[#171717] text-4xl md:text-5xl">
                 {/* Capability 1 */}

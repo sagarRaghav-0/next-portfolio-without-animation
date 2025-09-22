@@ -25,18 +25,16 @@ const FirstPage = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 mt-10 min-h-screen">
             {/* Text Section */}
-            <div className="space-y-8 md:space-y-13 col-span-1 md:col-span-2 px-6 md:px-0 flex flex-col">
+            <div className="space-y-8 md:space-y-13 col-span-1 md:col-span-2 md:px-0 flex flex-col">
                 <Copy delay={0.5}>
-                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl hidden md:block leading-snug">
+                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-12 hidden md:block leading-snug">
                         I create digital experiences that spark curiosity and leave a mark.
                         Every interface I design is a space where creativity and functionality
                         meet to tell unique stories.
                     </p>
-                </Copy>
-                <Copy>
+
                     <p className="text-xl sm:text-2xl md:text-3xl text-[#aeaeae] mt-6 md:mt-0 leading-relaxed">
-                        <span>UX|UI Designer</span> and <span>Developer</span>, crafting
-                        intuitive interfaces and digital experiences that connect with people.
+                        <span>UX|UI Designer</span> and <span>Developer</span>,crafting intuitive interfaces and digital experiences that connect with people.
                     </p>
                 </Copy>
             </div>
