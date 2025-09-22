@@ -1,44 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
+import Copy from "./gsap/Copy";
+import GsapAnimate from "./gsap/GsapAnimate";
 
 const Projects = () => {
     return (
-        <div className="py-16 mb-13 md:mb-0 flex flex-col gap-25 md:gap-30" id="projects">
-            <p className="text-3xl font-semibold mb-8 md:mb-[-7vh] text-[#aeaeae]">Projects</p>
+        <div className="py-18  md:py-[13em] flex flex-col md:gap-16 " >
+            <Copy>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-0 md:mb-10 text-[#aeaeae]">
+                    Projects
+                </p>
+            </Copy>
 
-            <div className="grid grid-cols-2 gap-y-12 md:gap-6 mt-[-20vh] md:mt-0">
+            <div className="grid grid-cols-1 md:grid-cols-2  md:gap-x-8  mt-[-3vh] sm:mt-[-3vh] md:mt-0">
                 {/* Project 1 */}
-                <Link
-                    href="/projects/ecom"
-                    className="block group h-[360px] rounded-xl overflow-hidden relative md:col-span-1 col-span-2"
-                >
-                    <Image
-                        src="/ecom.png"
-                        alt="E-commerce Project"
-                        fill
-                        className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </Link>
+                <GsapAnimate from="left">
+                    <Link
+                        href="/projects/ecom"
+                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative"
+                    >
+                        <Image
+                            src="/ecom.png"
+                            alt="E-commerce Project"
+                            fill
+                            className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </Link>
+                </GsapAnimate>
 
                 {/* Project 2 */}
-                <Link
-                    href="/projects/other"
-                    className="block group h-[360px] rounded-xl overflow-hidden relative mt-[-20vh] md:mt-0 md:col-span-1  col-span-2"
-                >
-                    <Image
-                        src="/fit.png"
-                        alt="Fitness Project"
-                        fill
-                        className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                </Link>
+                <GsapAnimate from="right">
+                    <Link
+                        href="/projects/other"
+                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-10vh] sm:mt-[-10vh] md:mt-0"
+                    >
+                        <Image
+                            src="/fit.png"
+                            alt="Fitness Project"
+                            fill
+                            className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </Link>
+                </GsapAnimate>
             </div>
 
-            <div className="text-center">
-                <p className="text-[#aeaeae] text-2xl mt-[-10vh] md:mt-0 md:text-5xl">
-                    Designing for <span>clarity</span>, <span>impact</span>, and{" "}
-                    <span>delight</span> — one project at a time.
-                </p>
+            <div className="text-center mt-12 md:mt-16 ">
+                <Copy>
+                    <p className="text-[#aeaeae] text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
+                        Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
+                    </p>
+                </Copy>
             </div>
         </div>
     );

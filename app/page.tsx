@@ -1,3 +1,4 @@
+"use client"
 import Banner from "@/components/Banner";
 import Capabilities from "@/components/Capabilities";
 import FirstPage from "@/components/FirstPage";
@@ -7,30 +8,36 @@ import Projects from "@/components/Projects";
 import Purpose from "@/components/Purpose";
 import Shadow from "@/components/Shadow";
 import Theend from "@/components/Theend";
+import { ReactLenis } from "lenis/react";
+
 
 export default function Home() {
   return (
     <>
-      <div className="bg-[#efefef] fixed inset-0  w-screen h-screen z-0"> </div>
-      <div className="relative px-5 md:px-10 pt-[20vh] text-[#171717] font-Outfit z-10" >
-        <Navbar />
+      <ReactLenis root>
 
-        <FirstPage />
+        <div className="bg-[#efefef] fixed inset-0  w-screen h-screen z-0"> </div>
+        <div className="relative px-5 md:px-10 pt-[20vh] text-[#171717] font-Outfit z-10" >
+          <Navbar />
 
-        <Purpose />
+          <FirstPage />
 
-        <Projects />
+          <Purpose />
 
-        <Capabilities />
+          <Projects />
 
-        <Shadow />
+          <Capabilities />
 
-        <Theend />
+          <Shadow />
 
-        <Footer />
+          <Theend />
 
-      </div>
-      <Banner />
+          <Footer />
+
+        </div>
+        <Banner />
+      </ReactLenis>
+
     </>
   );
 }
