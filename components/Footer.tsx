@@ -8,26 +8,28 @@ const Footer = () => {
             <div className="col-span-4 md:col-span-1 ">
                 <GsapAnimate from="bottom">
                     <Image
+                        data-cursor-text="Itachi Uchia"
                         src="/itachi.gif"
                         alt="contact me"
                         width={100}
                         height={100}
-                        className=" w-30 h-45 "
+                        className=" w-30 h-45 cursor-hover-target"
                     />
                 </GsapAnimate>
             </div>
             <div className="md:text-center col-span-4 md:col-span-1">
                 <Copy>
-                    <div>LinkedIn</div>
-                    <div>Instagram</div>
-                    <div>GitHub</div>
+                    <div data-cursor-text="LnkedIn" className="cursor-hover-target cursor-hover-social">LinkedIn</div>
+                    <div data-cursor-text="Instagram" className="cursor-hover-target cursor-hover-social">Instagram</div>
+                    <div data-cursor-text="Github" className="cursor-hover-target cursor-hover-social">GitHub</div>
                 </Copy>
             </div>
 
             <div className="md:text-center col-span-4 md:col-span-1">
                 <Copy>
 
-                    <p>Email</p>
+                    <div data-cursor-text="Email" className="cursor-hover-target cursor-hover-social">Email</div>
+
                 </Copy>
 
             </div>
@@ -35,7 +37,7 @@ const Footer = () => {
             <div className="md:text-right col-span-4 md:col-span-1">
                 <Copy>
 
-                    <p>© {new Date().getFullYear()} Sagar Raghav</p>
+                    <p className="cursor-hover-target cursor-hover-social" data-cursor-text="Me"  >© {new Date().getFullYear()} Sagar Raghav</p>
                 </Copy>
 
 

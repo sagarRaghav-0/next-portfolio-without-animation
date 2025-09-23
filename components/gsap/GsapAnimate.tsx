@@ -9,8 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 interface GsapAnimateProps {
     children: ReactNode;
     className?: string;
-    animation?: gsap.TweenVars;
-    scrollTrigger?: ScrollTrigger.Vars;
     wrapperTag?: React.ElementType;
     from?: "left" | "right" | "top" | "bottom";
 }
@@ -18,8 +16,6 @@ interface GsapAnimateProps {
 const GsapAnimate: React.FC<GsapAnimateProps> = ({
     children,
     className = "",
-    animation,
-    scrollTrigger,
     wrapperTag: Wrapper = "div",
     from = "left",
 }) => {
@@ -30,36 +26,28 @@ const GsapAnimate: React.FC<GsapAnimateProps> = ({
 
         const el = containerRef.current;
 
-        // Default animation based on direction
-        const defaultAnim: gsap.TweenVars = {
-            x: from === "left" ? -100 : from === "right" ? 100 : 0,
-            y: from === "top" ? -100 : from === "bottom" ? 100 : 0,
-            opacity: 0,
-            duration: 1.5,
-            ease: "power4.out",
-            immediateRender: false, // ensures it animates even if already visible
-        };
-
-        // Animate immediately if element is already in viewport
-        const rect = el.getBoundingClientRect();
-        const inView = rect.top < window.innerHeight && rect.bottom > 0;
-
-        if (inView) {
-            gsap.from(el, { ...defaultAnim, ...animation });
-        }
-
-        // Animate on scroll for elements below the viewport
-        gsap.from(el, {
-            ...defaultAnim,
-            ...animation,
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: el,
                 start: "top 90%",
                 toggleActions: "play none none reset",
-                ...scrollTrigger,
             },
         });
-    }, [animation, scrollTrigger, from]);
+
+        tl.from(el, {
+            x: from === "left" ? -100 : from === "right" ? 100 : 0,
+            y: from === "top" ? -100 : from === "bottom" ? 100 : 0,
+            opacity: 0,
+            duration: 1,
+            ease: "power4.out",
+        });
+
+        // ✅ cleanup function kills both timeline and ScrollTrigger
+        return () => {
+            tl.kill();
+            if (tl.scrollTrigger) tl.scrollTrigger.kill();
+        };
+    }, [from]);
 
     return (
         <Wrapper ref={containerRef} className={className}>

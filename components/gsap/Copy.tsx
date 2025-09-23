@@ -68,7 +68,7 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
 
         const animationProps = {
             y: "0%",
-            duration: 0.7,
+            duration: 0.4,
             stagger: 0.3,
             ease: "power4.out",
             delay: delay,

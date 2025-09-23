@@ -9,9 +9,9 @@ const Purpose = () => {
 
 
     return (
-        <div className="flex flex-col gap-7 mb-13 mt-[-10vh] md:mt-0">
+        <div className="flex flex-col gap-10 mb-13 mt-[-10vh] md:mt-0">
             <Copy>
-                <h2 className="text-3xl text-[#aeaeae]">Purpose</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl  text-[#aeaeae]">Purpose</h2>
             </Copy>
             <div className="md:text-5xl text-2xl flex flex-col  md:leading-15">
                 <Copy>

@@ -14,27 +14,28 @@ const Page = () => {
                 <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center mb-[25vh]">
                     {/* Project 1 */}
                     <div className=" relative w-screen h-[23vh] md:h-screen mb-20">
-                        {/* <GsapAnimate from="bottom"> */}
                         <Link href="#">
                             <Image
+                                data-cursor-text="visit project"
                                 src="/ecom.png"
                                 alt="E-commerce Project"
                                 fill
-                                className=" md:object-contain"
+                                className=" md:object-contain cursor-hover-target"
                                 priority
                             />
                         </Link>
-                        {/* </GsapAnimate> */}
                     </div>
 
                     {/* Project 2 */}
                     <div className="relative w-screen h-[25vh] md:h-screen">
                         <Link href="#">
                             <Image
+                                data-cursor-text="visit project"
+
                                 src="/fit.png"
                                 alt="Fitness Project"
                                 fill
-                                className="object-contain"
+                                className="object-contain  cursor-hover-target"
                             />
                         </Link>
                     </div>

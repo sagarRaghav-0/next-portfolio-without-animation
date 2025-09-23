@@ -12,7 +12,7 @@ const page = () => {
 
             <div className="flex items-start justify-center flex-col-12 md:mt-0 h-screen flex-col">
                 <Copy>
-                    <p className="text-3xl md:text-5xl text-[#aeaeae] mb-5">Services That <span> Shape </span> Experiences</p>
+                    <p className="text-3xl md:text-5xl text-shadow-text mb-5">Services That <span> Shape </span> Experiences</p>
                     <p className='max-w-[400px]'>Design, development, and strategy—crafted to bring ideas to life and make every interaction meaningful.</p>
                 </Copy>
             </div>
@@ -20,7 +20,7 @@ const page = () => {
             <Copy>
 
 
-                <h2 className=' text-2xl text-[#aeaeae] mb-7'>Capabilities</h2>
+                <h2 className=' text-3xl sm:text-4xl md:text-5xl text-shadow-text mb-7'>Capabilities</h2>
 
             </Copy>
 

@@ -11,13 +11,17 @@ import Theend from "@/components/Theend";
 import { ReactLenis } from "lenis/react";
 
 
+
 export default function Home() {
+
+
+
+
   return (
     <>
       <ReactLenis root>
 
-        <div className="bg-[#efefef] fixed inset-0  w-screen h-screen z-0"> </div>
-        <div className="relative px-5 md:px-10 pt-[20vh] text-[#171717] font-Outfit z-10" >
+        <div className="relative bg-[#efefef] px-5 md:px-10 pt-[20vh]  font-Outfit z-10" >
           <Navbar />
 
           <FirstPage />

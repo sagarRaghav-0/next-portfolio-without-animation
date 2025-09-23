@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="py-18  md:py-[13em] flex flex-col md:gap-16 " >
             <Copy>
-                <p className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-0 md:mb-10 text-[#aeaeae]">
+                <p className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
                     Projects
                 </p>
             </Copy>
@@ -16,8 +16,9 @@ const Projects = () => {
                 {/* Project 1 */}
                 <GsapAnimate from="left">
                     <Link
+                        data-cursor-text="visit project"
                         href="/projects/ecom"
-                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative"
+                        className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative"
                     >
                         <Image
                             src="/ecom.png"
@@ -31,8 +32,9 @@ const Projects = () => {
                 {/* Project 2 */}
                 <GsapAnimate from="right">
                     <Link
+                        data-cursor-text="visit project"
                         href="/projects/other"
-                        className="block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
+                        className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
                     >
                         <Image
                             src="/fit.png"
@@ -46,7 +48,7 @@ const Projects = () => {
 
             <div className="text-center mt-12 md:mt-16 ">
                 <Copy>
-                    <p className="text-[#aeaeae] text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
+                    <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
                         Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
                     </p>
                 </Copy>

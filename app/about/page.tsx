@@ -11,7 +11,7 @@ const page = () => {
                 <Navbar />
                 <div className="flex  items-center  w-full h-screen pt-[10vh] mb-10">
                     <Copy>
-                        <p className="text-[#aeaeae] text-2xl md:text-5xl   md:pt-[10vh] tracking-wide leading-tight ">
+                        <p className="text-shadow-text text-2xl md:text-5xl   md:pt-[10vh] tracking-wide leading-tight ">
                             I’m Sagar, a <span>UI/UX designer</span> with a background in web and <span> front-end development </span>.
                             My work merges design, usability, and strategy to create digital experiences that connect with people.
                             Passionate about web design, branding, Progressive web app, I focus on transforming ideas into impactful,

@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full py-7 flex justify-between items-center z-50 bg-[#efefef]  px-5 md:px-10">
+            <nav className="fixed top-0 left-0 w-full py-7 flex justify-between items-center  z-50 bg-[#efefef]  px-5 md:px-10">
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="tracking-widest md:text-2xl">Sagar Raghav</h1>
@@ -16,7 +16,7 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-7 md:text-xl items-center">
-                    <p className="bg-[#efefef] py-2 px-4 cursor-pointer">
+                    <p className=" py-2 px-4 cursor-pointer">
                         <FaPlay />
                     </p>
                     <Link href="/about"><p className="cursor-pointer">About</p></Link>
