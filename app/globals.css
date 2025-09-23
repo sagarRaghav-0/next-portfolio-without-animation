@@ -24,6 +24,7 @@
   .darkshadow {
 
     background-color: #000000e0;
+
     background-blend-mode: multiply;
   }
 }

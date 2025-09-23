@@ -56,9 +56,14 @@ export default function RootLayout({
 
       cursor.classList.add("cursor-lens");
 
+      const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
       gsap.to(cursor, {
         scale: label === "Itachi Uchia" ? 5 : 8,
-        backgroundColor: (label === "Itachi Uchia" || label === "" || label === "Goku vs Vegeta") ? "rgba(0,0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)",
+        backgroundColor:
+          label === "Itachi Uchia" || label === "" || label === "Goku vs Vegeta"
+            ? darkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)"
+            : darkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)",
         color: "#fff",
 
         duration: 0.3,
