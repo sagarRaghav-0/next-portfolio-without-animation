@@ -64,7 +64,7 @@ export default function RootLayout({
           label === "Itachi Uchia" || label === "" || label === "Goku vs Vegeta"
             ? darkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)"
             : darkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)",
-        color: "#fff",
+        color: darkMode ? "#fff" : "000",
 
         duration: 0.3,
       });
@@ -74,13 +74,24 @@ export default function RootLayout({
     const handleLeave = () => {
       cursor.textContent = "";
       cursor.classList.remove("cursor-lens");
+      const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
       gsap.to(cursor, {
         scale: 1,
-        backgroundColor: "#171717",
-        color: "#fff",
+
+        backgroundColor:
+          darkMode ? "#efefef" : "#171717",
+        color: darkMode ? "#fff" : "000",
+
         duration: 0.3,
       });
+
+      // gsap.to(cursor, {
+      //   scale: 1,
+      //   backgroundColor: "#171717",
+      //   color: "#fff",
+      //   duration: 0.3,
+      // });
     };
 
 
