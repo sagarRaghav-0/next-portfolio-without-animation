@@ -6,7 +6,7 @@ const Capabilities = () => {
             <Copy>
                 <p className="text-3xl sm:text-4xl md:text-5xl mb-8 text-shadow-text">Capabilities</p>
             </Copy>
-            <div className="flex flex-col text-[#171717] text-4xl md:text-5xl">
+            <div className="flex flex-col text-[#171717] dark:text-[#efeded]  text-4xl md:text-5xl">
                 {/* Capability 1 */}
                 <div className="relative overflow-hidden group">
                     <Copy>
@@ -16,7 +16,7 @@ const Capabilities = () => {
                         </p>
                     </Copy>
 
-                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] transition-all duration-500 group-hover:h-full"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717]  dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                 </div>
                 <hr className="border-t border-[#d4d4d4]" />
 
@@ -29,7 +29,7 @@ const Capabilities = () => {
                         </p>
                     </Copy>
 
-                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] transition-all duration-500 group-hover:h-full"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                 </div>
                 <hr className="border-t border-[#d4d4d4]" />
 
@@ -42,7 +42,7 @@ const Capabilities = () => {
                         </p>
                     </Copy>
 
-                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] transition-all duration-500 group-hover:h-full"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                 </div>
             </div>
         </div>

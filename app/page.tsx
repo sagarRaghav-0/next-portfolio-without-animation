@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <ReactLenis root>
 
-        <div className="relative bg-[#efefef] px-5 md:px-10 pt-[20vh]  font-Outfit z-10" >
+        <div className="relative bg-[#efefef] dark:text-[#efeded] dark:bg-[#000000e1] px-5 md:px-10 pt-[20vh]  font-Outfit z-10" >
           <Navbar />
 
           <FirstPage />

@@ -10,7 +10,7 @@ const Theend = () => {
                 <p className="text-3xl sm:text-4xl md:text-5xl text-shadow-text  ">The end… and the beginning of our  <span> next project </span>.</p>
             </Copy>
 
-            <div className="flex items-center justify-center gap-x-3 bg-[#ffffff] p-4 rounded-3xl hover:bg-[#dadada] transition ease-in-out duration-500 ">
+            <div className="flex items-center justify-center gap-x-3 bg-[#ffffff] dark:bg-[#000000e1] p-4 rounded-3xl dark:hover:bg-[#797878aa] hover:bg-[#dadada] transition ease-in-out duration-500 ">
                 <Copy>
                     <p>Make it Happen</p>
                 </Copy>

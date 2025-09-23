@@ -28,7 +28,7 @@ const FirstPage = () => {
             {/* Text Section */}
             <div className=" col-span-1 md:col-span-2 md:px-0 flex flex-col">
                 <Copy delay={0.5}>
-                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-12 hidden md:block leading-snug">
+                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-12 hidden  md:block leading-snug">
                         I create digital experiences that spark curiosity and leave a mark.
                         Every interface I design is a space where creativity and functionality
                         meet to tell unique stories.

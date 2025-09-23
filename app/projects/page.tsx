@@ -8,7 +8,7 @@ import Link from "next/link";
 const Page = () => {
     return (
         <>
-            <div className="relative px-5 md:px-10 bg-[#efefef] font-Outfit ">
+            <div className="relative px-5 md:px-10 bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded]">
                 <Navbar />
 
                 <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center mb-[25vh]">

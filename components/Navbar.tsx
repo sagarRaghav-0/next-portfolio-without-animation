@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full py-7 flex justify-between items-center  z-50 bg-[#efefef]  px-5 md:px-10">
+            <nav className="fixed top-0 left-0 w-full py-7 flex justify-between items-center  z-50 bg-[#efefef] dark:text-[#efeded] dark:bg-[transparent]  px-5 md:px-10">
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="tracking-widest md:text-2xl">Sagar Raghav</h1>

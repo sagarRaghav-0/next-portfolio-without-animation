@@ -6,7 +6,7 @@ import Theend from '@/components/Theend'
 
 const page = () => {
     return (
-        <>        <div className='px-5 md:px-10  bg-[#efefef] font-Outfit'>
+        <>        <div className='px-5 md:px-10  bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded]'>
             <Navbar />
 
 
@@ -25,7 +25,7 @@ const page = () => {
             </Copy>
 
 
-            <div className="flex flex-col text-[#171717] mb-[20vh]">
+            <div className="flex flex-col text-[#171717] dark:text-[#efeded] mb-[20vh]">
                 {/* Capability 1 */}
                 <div className="relative overflow-hidden group md:mb-0 mb-5">
                     <div className='flex flex-col md:flex-row md:items-center justify-between  py-2 relative z-10  transition-colors duration-500 group-hover:text-white'>
@@ -35,7 +35,7 @@ const page = () => {
                         <p>I craft visual universes that tell your story, break the rules, and make every detail matter.</p>
 
                     </div>
-                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] transition-all duration-500 group-hover:h-full"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                     <hr className="border-t border-[#d4d4d4]" />
                 </div>
 
@@ -48,7 +48,7 @@ const page = () => {
                         </p>
                         <p>I design interfaces that don’t just work—they captivate, guide, and transform the way people experience your brand.</p>
                     </div>
-                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] transition-all duration-500 group-hover:h-full"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                     <hr className="border-t border-[#d4d4d4]" />
                 </div>
 
