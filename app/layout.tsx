@@ -174,7 +174,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div ref={cursorRef} className=" hidden  z-50 fixed md:flex items-center justify-center rounded-full  bg-[#171717] center pointer-events-none w-[20px] h-[20px] text-[2px] text-center font-bold"> </div>
+        <div ref={cursorRef} className=" hidden  z-50 fixed md:flex items-center justify-center rounded-full dark:bg-[#efeded] bg-[#171717] center pointer-events-none w-[20px] h-[20px] text-[2px] text-center font-bold"> </div>
 
         <div ref={mainRef}>
           {children}
