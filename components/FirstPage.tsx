@@ -47,7 +47,7 @@ const FirstPage = () => {
                 className="cursor-hover-target image flex justify-center items-center md:col-span-1 col-span-1 mt-[-70vh] sm:mt-[-30vh] md:mt-[-20vh] px-6">
                 <Image
 
-                    src="/dbz2.gif"
+                    src="/fdbz.gif"
                     alt="contact me"
                     width={100}
                     height={100}
