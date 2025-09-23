@@ -1,6 +1,7 @@
 "use client"
 
 import gsap from 'gsap';
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { Geist, Geist_Mono } from "next/font/google";
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from "react";
@@ -26,11 +27,24 @@ export default function RootLayout({
 
   const mainRef = useRef<HTMLDivElement | null>(null);
   const cursorRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const main = mainRef.current;
+    const content = contentRef.current;
     const cursor = cursorRef.current;
 
     if (!main || !cursor) return;
+
+    // Register GSAP plugin
+    gsap.registerPlugin(ScrollSmoother);
+
+    // Create smooth scrolling
+    const smoother = ScrollSmoother.create({
+      wrapper: main,
+      content: content,
+      smooth: 1.5,  // scroll smoothness
+      effects: true, // enable data-speed/data-lag effects
+    });
 
     gsap.set(cursor, { xPercent: -50, yPercent: -50 });
 
@@ -86,12 +100,6 @@ export default function RootLayout({
         duration: 0.3,
       });
 
-      // gsap.to(cursor, {
-      //   scale: 1,
-      //   backgroundColor: "#171717",
-      //   color: "#fff",
-      //   duration: 0.3,
-      // });
     };
 
 
@@ -181,6 +189,8 @@ export default function RootLayout({
         el.removeEventListener("mouseenter", handleEnterSocial);
         el.removeEventListener("mouseleave", handleLeaveSocial);
       });
+
+      smoother.kill();
     };
   }, [usePathname()]); // 👈 re-run when route changes
 
@@ -193,7 +203,9 @@ export default function RootLayout({
         <div ref={cursorRef} className=" hidden  z-50 fixed md:flex items-center justify-center rounded-full dark:bg-[#efeded] bg-[#171717] center pointer-events-none w-[20px] h-[20px] text-[2px] text-center font-bold"> </div>
 
         <div ref={mainRef}>
-          {children}
+          <div ref={contentRef}>
+            {children}
+          </div>
         </div>
       </body>
     </html>

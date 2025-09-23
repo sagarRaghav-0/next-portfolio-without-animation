@@ -8,7 +8,6 @@ import Projects from "@/components/Projects";
 import Purpose from "@/components/Purpose";
 import Shadow from "@/components/Shadow";
 import Theend from "@/components/Theend";
-import { ReactLenis } from "lenis/react";
 
 
 
@@ -19,28 +18,26 @@ export default function Home() {
 
   return (
     <>
-      <ReactLenis root>
 
-        <div className="relative bg-[#efefef] dark:text-[#efeded] dark:bg-[#000000e1] px-5 md:px-10 pt-[20vh]  font-Outfit z-10" >
-          <Navbar />
+      <div className="relative bg-[#efefef] dark:text-[#efeded] dark:bg-[#000000e1] px-5 md:px-10 pt-[20vh]  font-Outfit z-10" >
+        <Navbar />
 
-          <FirstPage />
+        <FirstPage />
 
-          <Purpose />
+        <Purpose />
 
-          <Projects />
+        <Projects />
 
-          <Capabilities />
+        <Capabilities />
 
-          <Shadow />
+        <Shadow />
 
-          <Theend />
+        <Theend />
 
-          <Footer />
+        <Footer />
 
-        </div>
-        <Banner />
-      </ReactLenis>
+      </div>
+      <Banner />
 
     </>
   );

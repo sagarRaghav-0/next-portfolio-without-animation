@@ -69,7 +69,7 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
         const animationProps = {
             y: "0%",
             duration: 0.4,
-            stagger: 0.3,
+            stagger: 0.1,
             ease: "power4.out",
             delay: delay,
         };
@@ -79,7 +79,7 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
                 ...animationProps,
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: "top 90%",
+                    start: "top 75%",
                     toggleActions: "play none none reset",
                 }
             });
