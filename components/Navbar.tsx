@@ -80,7 +80,7 @@ const Navbar = () => {
 
             {/* Fullscreen Mobile Menu */}
             <div
-                className={`fixed inset-0 bg-[#efefef] dark:text-[#efeded] dark:bg-[#797878] px-5 flex flex-col items-start justify-center gap-8 z-40 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+                className={`fixed inset-0 bg-[#efefef] dark:text-[#efeded] dark:bg-[#1e1e1e]  px-5 flex flex-col items-start justify-center gap-8 z-40 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
                     }`}
             >
                 {[

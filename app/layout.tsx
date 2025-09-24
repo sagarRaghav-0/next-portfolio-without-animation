@@ -1,5 +1,9 @@
 "use client"
 
+import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import Theend from '@/components/Theend';
 import gsap from 'gsap';
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -202,9 +206,13 @@ export default function RootLayout({
       >
         <div ref={cursorRef} className=" hidden  z-50 fixed md:flex items-center justify-center rounded-full dark:bg-[#efeded] bg-[#171717] center pointer-events-none w-[20px] h-[20px] text-[2px] text-center font-bold"> </div>
 
-        <div ref={mainRef}>
+        <div className="" ref={mainRef}>
+          <Navbar />
           <div ref={contentRef}>
             {children}
+            <Theend />
+            <Footer />
+            <Banner />
           </div>
         </div>
       </body>

@@ -1,13 +1,8 @@
-import Banner from '@/components/Banner'
-import Footer from '@/components/Footer'
 import Copy from '@/components/gsap/Copy'
-import Navbar from '@/components/Navbar'
-import Theend from '@/components/Theend'
 
 const page = () => {
     return (
-        <>        <div className='px-5 md:px-10  bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded]'>
-            <Navbar />
+        <div className='px-5 md:px-10  bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded] pb-[20vh]'>
 
 
             <div className="flex items-start justify-center flex-col-12 md:mt-0 h-screen flex-col">
@@ -25,7 +20,7 @@ const page = () => {
             </Copy>
 
 
-            <div className="flex flex-col text-[#171717] dark:text-[#efeded] mb-[20vh]">
+            <div className="flex flex-col text-[#171717] dark:text-[#efeded] ">
                 {/* Capability 1 */}
                 <div className="relative overflow-hidden group md:mb-0 mb-5">
                     <div className='flex flex-col md:flex-row md:items-center justify-between  py-2 relative z-10  transition-colors duration-500 group-hover:text-white'>
@@ -57,11 +52,8 @@ const page = () => {
 
             {/* <Parallax /> */}
 
-            <Theend />
-            <Footer />
+
         </div>
-            <Banner />
-        </>
 
     )
 }
