@@ -7,7 +7,7 @@ const Theend = () => {
         <div className="flex flex-col items-start justify-center bg-[#efefef] dark:bg-[#000000e1] px-5 md:px-10 space-y-5 py-[10vh] ">
             <Copy>
 
-                <p data-lag={0.1} className="text-3xl sm:text-4xl md:text-5xl text-shadow-text  ">The end… and the beginning of our  <span> next project </span>.</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl text-shadow-text  ">The end… and the beginning of our  <span> next project </span>.</p>
             </Copy>
 
             <div className="flex items-center justify-center gap-x-3 bg-[#ffffff] dark:bg-[#000000e1] dark:text-shadow-text p-4 rounded-3xl dark:hover:bg-[#797878aa] hover:bg-[#dadada] transition ease-in-out duration-500 ">

@@ -48,7 +48,7 @@ const Projects = () => {
 
             <div className="text-center mt-12 md:mt-16 ">
                 <Copy>
-                    <p data-lag={0.5} className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
+                    <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
                         Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
                     </p>
                 </Copy>
