@@ -29,7 +29,6 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
             content: content,
             smooth: 2,  // scroll smoothness
             effects: true, // enable data-speed/data-lag effects
-            smoothTouch: 0.1,
         });
 
         gsap.set(cursor, { xPercent: -100, yPercent: -300 });
