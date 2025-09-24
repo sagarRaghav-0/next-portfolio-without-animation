@@ -6,11 +6,14 @@ import GsapAnimate from "./gsap/GsapAnimate";
 const Projects = () => {
     return (
         <div className="py-18  md:py-[13em] flex flex-col md:gap-16 " >
-            <Copy>
-                <p data-speed={0.5} className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
-                    Projects
-                </p>
-            </Copy>
+            <div className="overflow-hidden">
+
+                <Copy>
+                    <p data-speed={0.5} className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
+                        Projects
+                    </p>
+                </Copy>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2  md:gap-x-8  mt-[-3vh] sm:mt-[-3vh] md:mt-0">
                 {/* Project 1 */}
@@ -46,12 +49,16 @@ const Projects = () => {
                 </GsapAnimate>
             </div>
 
-            <div data-lag={0.5} className="text-center mt-12 md:mt-16 ">
-                <Copy>
-                    <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
-                        Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
-                    </p>
-                </Copy>
+            <div className="overflow-hidden">
+
+                <div data-lag={0.5} className="text-center mt-12 md:mt-16 ">
+                    <Copy>
+                        <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
+                            Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
+                        </p>
+                    </Copy>
+
+                </div>
             </div>
         </div>
     );
