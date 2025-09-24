@@ -27,8 +27,9 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
         const smoother = ScrollSmoother.create({
             wrapper: main,
             content: content,
-            smooth: 1.5,  // scroll smoothness
+            smooth: 2,  // scroll smoothness
             effects: true, // enable data-speed/data-lag effects
+            smoothTouch: 0.1,
         });
 
         gsap.set(cursor, { xPercent: -100, yPercent: -300 });
