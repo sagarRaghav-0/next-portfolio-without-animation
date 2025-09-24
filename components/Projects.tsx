@@ -21,7 +21,7 @@ const Projects = () => {
                         className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative"
                     >
                         <Image
-                            src="/ecom.png"
+                            src="/ecom.webp"
                             alt="E-commerce Project"
                             fill
                             className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
@@ -37,7 +37,7 @@ const Projects = () => {
                         className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
                     >
                         <Image
-                            src="/fit.png"
+                            src="/fit.webp"
                             alt="Fitness Project"
                             fill
                             className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"

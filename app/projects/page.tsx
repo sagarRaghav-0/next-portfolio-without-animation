@@ -11,7 +11,7 @@ const Page = () => {
                     <Link href="#">
                         <Image
                             data-cursor-text="visit project"
-                            src="/ecom.png"
+                            src="/ecom.webp"
                             alt="E-commerce Project"
                             fill
                             className=" md:object-contain cursor-hover-target"
@@ -26,7 +26,7 @@ const Page = () => {
                         <Image
                             data-cursor-text="visit project"
 
-                            src="/fit.png"
+                            src="/fit.webp"
                             alt="Fitness Project"
                             fill
                             className="object-contain  cursor-hover-target"
