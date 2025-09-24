@@ -4,7 +4,7 @@ import GsapAnimate from "./gsap/GsapAnimate"
 
 const Theend = () => {
     return (
-        <div className="flex flex-col items-start justify-center dark:bg-[#000000e1] px-5 md:px-10 space-y-5 py-[10vh] ">
+        <div className="flex flex-col items-start justify-center bg-[#efefef] dark:bg-[#000000e1] px-5 md:px-10 space-y-5 py-[10vh] ">
             <Copy>
 
                 <p className="text-3xl sm:text-4xl md:text-5xl text-shadow-text  ">The end… and the beginning of our  <span> next project </span>.</p>

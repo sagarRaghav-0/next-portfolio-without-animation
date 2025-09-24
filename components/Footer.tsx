@@ -4,7 +4,7 @@ import GsapAnimate from "./gsap/GsapAnimate"
 
 const Footer = () => {
     return (
-        <div className='grid grid-cols-4 md:text-xl items-center py-[13vh] px-5 md:px-10 dark:bg-[#000000e1]  dark:text-[#E1E1E1]  md:space-y-0 space-y-7 '>
+        <div className='grid grid-cols-4 md:text-xl items-center py-[13vh] px-5 md:px-10 dark:bg-[#000000e1] bg-[#efefef] dark:text-[#E1E1E1]  md:space-y-0 space-y-7 '>
             <div className="col-span-4 md:col-span-1 ">
                 <GsapAnimate from="bottom">
                     <Image
