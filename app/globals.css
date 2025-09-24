@@ -87,6 +87,14 @@ span {
 }
 
 
+html,
+body,
+#__next,
+.smooth-wrapper,
+.smooth-content {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
 
 
 
