@@ -7,7 +7,7 @@ const Shadow = () => {
             data-cursor-text=""
         >
             <Copy>
-                <p className="text-3xl sm:text-4xl md:text-5xl text-shadow-text leading-relaxed tracking-wider">
+                <p data-lag={0.2} className="text-3xl sm:text-4xl md:text-5xl text-shadow-text leading-relaxed tracking-wider">
                     <span> Touching </span> possibilities, designing the future,
                     <br />
                     transforming vision into experience.
