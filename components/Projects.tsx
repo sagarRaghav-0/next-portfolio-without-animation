@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="py-18  md:py-[13em] flex flex-col md:gap-16 " >
             <Copy>
-                <p className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
+                <p data-speed={0.5} className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
                     Projects
                 </p>
             </Copy>
@@ -46,7 +46,7 @@ const Projects = () => {
                 </GsapAnimate>
             </div>
 
-            <div className="text-center mt-12 md:mt-16 ">
+            <div data-lag={0.5} className="text-center mt-12 md:mt-16 ">
                 <Copy>
                     <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
                         Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.

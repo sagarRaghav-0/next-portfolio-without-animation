@@ -7,7 +7,7 @@ const Page = () => {
 
             <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center pb-[15vh]">
                 {/* Project 1 */}
-                <div className=" relative w-screen h-[23vh] md:h-screen mb-20">
+                <div data-lag={0.3} className=" relative w-screen h-[23vh] md:h-screen mb-20">
                     <Link href="#">
                         <Image
                             data-cursor-text="visit project"
@@ -21,7 +21,7 @@ const Page = () => {
                 </div>
 
                 {/* Project 2 */}
-                <div className="relative w-screen h-[25vh] md:h-screen">
+                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen">
                     <Link href="#">
                         <Image
                             data-cursor-text="visit project"

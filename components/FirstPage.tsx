@@ -27,14 +27,14 @@ const FirstPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 mt-10 min-h-screen">
             {/* Text Section */}
             <div className=" col-span-1 md:col-span-2 md:px-0 flex flex-col">
-                <Copy delay={0.5}>
+                <Copy delay={0.4}>
                     <p data-lag={0.1} className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-12 hidden  md:block leading-snug">
                         I create digital experiences that spark curiosity and leave a mark.
                         Every interface I design is a space where creativity and functionality
                         meet to tell unique stories.
                     </p>
 
-                    <p data-lag={0.5} className="text-xl sm:text-2xl md:text-3xl text- text-shadow-text mt-6 md:mt-0 leading-relaxed">
+                    <p data-lag={0.6} className="text-xl sm:text-2xl md:text-3xl text- text-shadow-text mt-6 md:mt-0 leading-relaxed">
                         <span>UX|UI Designer</span> and <span>Developer</span>,crafting intuitive interfaces and digital experiences that connect with people.
                     </p>
                 </Copy>
