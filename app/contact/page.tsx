@@ -5,7 +5,7 @@ const page = () => {
     return (
         <div className='px-5 md:px-10  bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded]'>
             <div className='flex flex-col pt-[15vh] h-screen justify-center pb-[15vh]'>
-                <div data-lag={0.4} className='flex flex-col gap-5 mb-20'>
+                <div className='flex flex-col gap-5 mb-20'>
                     <Copy>
                         <p className='text-xl sm:4xl md:text-5xl text-shadow-text md:leading-[3.5rem] '>Behind every <span> great design </span> there’s a<br />
                             conversation waiting to <span> happen</span>
@@ -14,7 +14,7 @@ const page = () => {
                     </Copy>
                 </div>
 
-                <div data-lag={0.5} className="flex flex-col text-3xl space-y-4 max-w-[400px]">
+                <div className="flex flex-col text-3xl space-y-4 max-w-[400px]">
                     <Copy>
 
                         <Link data-cursor-text="LnkedIn" href="#" className="cursor-hover-target cursor-hover-social flex items-center gap-2  hover:translate-x-2 transition-transform">

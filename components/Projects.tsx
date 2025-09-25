@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="py-25  md:py-[13em] flex flex-col md:gap-16 " >
             <Copy>
-                <p data-speed={0.5} className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
+                <p className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
                     Projects
                 </p>
             </Copy>
@@ -48,7 +48,7 @@ const Projects = () => {
 
             <div className="text-center mt-12 md:mt-16 ">
                 <Copy>
-                    <p data-lag={0.5} className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
+                    <p className="text-shadow-text text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-relaxed">
                         Designing for <span>clarity</span>, <span>impact</span>, and <span>delight</span> — one project at a time.
                     </p>
                 </Copy>
