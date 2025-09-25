@@ -7,10 +7,10 @@ const page = () => {
             <div className='flex flex-col pt-[15vh] h-screen justify-center pb-[15vh]'>
                 <div className='flex flex-col gap-5 mb-20'>
                     <Copy>
-                        <p className='text-xl sm:4xl md:text-5xl text-shadow-text md:leading-[3.5rem] '>Behind every <span> great design </span> there’s a<br />
+                        <p className='text-xl md:text-5xl text-shadow-text md:leading-[3.5rem] '>Behind every <span> great design </span> there’s a<br />
                             conversation waiting to <span> happen</span>
                         </p>
-                        <p>Let’s talk, let’s explore, let’s create.</p>
+                        <p >Let’s talk, let’s explore, let’s create.</p>
                     </Copy>
                 </div>
 

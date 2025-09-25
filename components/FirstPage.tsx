@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Copy from "./gsap/Copy";
 
 import gsap from "gsap";
@@ -40,19 +39,7 @@ const FirstPage = () => {
                 </Copy>
             </div>
 
-            {/* Video Section */}
-            <div
-                data-cursor-text="Goku vs Vegeta"
 
-                className="cursor-hover-target image flex justify-center items-center md:col-span-1 col-span-1 mt-[-70vh] sm:mt-[-30vh] md:mt-[-20vh] px-6">
-                <Image
-                    src="/fdbz.gif"
-                    alt="contact me"
-                    width={100}
-                    height={100}
-                    className=" w-full h-45 "
-                />
-            </div>
         </div>
     );
 };
